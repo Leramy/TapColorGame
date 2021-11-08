@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 1754795738}
@@ -304,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 127628651}
@@ -438,6 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 2014658219}
@@ -578,6 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 904636506}
@@ -995,6 +999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 1399673217}
@@ -1132,6 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 127628651}
@@ -1366,6 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 1754795738}
@@ -1645,6 +1652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 0}
   paletteController: {fileID: 1888481465}
   neighbours: []
 --- !u!1 &1399673215
@@ -1692,6 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 146423305}
@@ -2076,6 +2085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 1019602548}
@@ -2295,7 +2305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 67.7, y: 8.22}
+  m_AnchoredPosition: {x: 67.70001, y: 8.22}
   m_SizeDelta: {x: 85, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888481467
@@ -2437,6 +2447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea74ec6a1607b8e498c628fa1451586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelController: {fileID: 1738601546}
   paletteController: {fileID: 1888481465}
   neighbours:
   - {fileID: 146423305}

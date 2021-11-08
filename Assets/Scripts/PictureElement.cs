@@ -39,6 +39,12 @@ public class PictureElement : MonoBehaviour
             levelController.AddState(this.name, 0);
 
         SelfColor = newColor;
+
+        foreach (PictureElement neighbour in neighbours)
+        {
+            neighbour.RefreshState();
+        }
+
     }
 
     private bool CheckNeighboursColor(Color newColor)
@@ -49,5 +55,15 @@ public class PictureElement : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    public void RefreshState()
+    {
+        if (CheckNeighboursColor(selfColor))
+        {
+            levelController.AddState(this.name, 1);
+        }
+        else
+            levelController.AddState(this.name, 0);
     }
 }

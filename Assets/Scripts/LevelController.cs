@@ -22,8 +22,6 @@ public class LevelController : MonoBehaviour
 
     public void AddState(string name,int value)
     {
-        levelComplete.gameObject.SetActive(false);
-
         if (partsState.ContainsKey(name))
             partsState[name] = value;
         else
@@ -39,9 +37,17 @@ public class LevelController : MonoBehaviour
         {
             counter += partState.Value;
         }
+
+        Debug.Log("New Check");
+        foreach (KeyValuePair<string, int> partState in partsState)
+        {   
+            Debug.Log ("¹ " + partState.Key + " - " + partState.Value);
+        }
+
         if (counter == maxCount)
         {
             levelComplete.gameObject.SetActive(true);
         }
+        else levelComplete.gameObject.SetActive(false);
     }
 }
