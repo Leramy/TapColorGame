@@ -9,6 +9,9 @@ public class PaletteController : MonoBehaviour
 
     private ColorElement currentColor;
 
+    /// <summary>
+    /// Текущий выделенный цвет
+    /// </summary>
     public ColorElement CurrentColor
     {
         get { return currentColor; }
@@ -17,6 +20,11 @@ public class PaletteController : MonoBehaviour
             if (value != null)
                 currentColor = value;
         }
+    }
+
+    public Color GetColor()
+    {
+        return currentColor.MainMaterial.color;
     }
 
     [SerializeField] private Transform scrollViewContent;
@@ -28,11 +36,15 @@ public class PaletteController : MonoBehaviour
     {
         for (int i = 0; i < materials.Count; i++)
         {
+            // Инициализация цветов в палетке
+
             var colorObject = Instantiate(colorPrefab, scrollViewContent);
             var script = colorObject.GetComponent<ColorElement>();
 
             script.MainMaterial = materials[i];
             script.DefaultParentTransform = scrollViewContent;
+
+            // Делаем цвета интерактивными и добавляем на них триггер по нажатию 
 
             EventTrigger.Entry entry = new EventTrigger.Entry();
             entry.eventID = EventTriggerType.PointerClick;
